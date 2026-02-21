@@ -33,14 +33,14 @@ public class Main {
     private static List<City> createCitiesAndLoadData() {
         List<City> cities = new ArrayList<>();
 
-        // Город 1: Киев
-        City kyiv = new City("Kyiv", "big");
+        // Київ
+        City kyiv = new City("Київ", "великий");
 
-        Street khreshchatyk = new Street("Khreshchatyk");
+        Street khreshchatyk = new Street("Хрещатик");
         khreshchatyk.addHouse(new House(1, 5));
         khreshchatyk.addHouse(new House(2, 4));
 
-        Street andriivskyi = new Street("Andriivskyi Descent");
+        Street andriivskyi = new Street("Андріївський узві");
         andriivskyi.addHouse(new House(10, 3));
         andriivskyi.addHouse(new House(12, 2));
 
@@ -48,14 +48,14 @@ public class Main {
         kyiv.addStreet(andriivskyi);
         cities.add(kyiv);
 
-        // Город 2: Львов
-        City lviv = new City("Lviv", "medium");
+        //  Львів
+        City lviv = new City("Львів", "середник");
 
-        Street rynok = new Street("Rynok Square");
+        Street rynok = new Street("Площа Ринок");
         rynok.addHouse(new House(5, 4));
         rynok.addHouse(new House(6, 4));
 
-        Street shevchenka = new Street("Shevchenka Ave");
+        Street shevchenka = new Street("Проспект Шевченка");
         shevchenka.addHouse(new House(15, 6));
         shevchenka.addHouse(new House(17, 5));
 
